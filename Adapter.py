@@ -7,6 +7,7 @@ class CsvPlotter:
         pass
 
 class CsvPlotterAdapter():
+    #metodo abstracto
     @abstractmethod
     def plot_data(csv_data):
         return "Image"
@@ -19,6 +20,7 @@ class CsvPlotterAdapter():
 
     def get_countries_historic_data(countries,start_date,end_date):
         pass
+
 
 class App:
     def show_graph(self, data: Dict[str, List]) -> None:
